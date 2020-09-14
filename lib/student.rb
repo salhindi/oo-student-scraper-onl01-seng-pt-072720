@@ -19,6 +19,7 @@ class Student
   def add_student_attributes(attributes_hash)
       self.send("bio=", attributes_hash[:bio])
       self.send("blog=", attributes_hash[:blog])
+      self.send("linkedin=", attributes_hash[:linkedin])
   end
 
   def self.all
